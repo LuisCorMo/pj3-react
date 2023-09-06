@@ -41,7 +41,7 @@ const ResidentList = ({ residents, currentLocation }) => {
     <section>
       <section
         className={`grid justify-center max-w-screen-sm mx-auto sm:${
-          residents.length > 1 && "grid-cols-2"
+          residents.length > 1 && "grid grid-cols-2"
         } gap-12`}
       >
         {residentsInPage.map((resident) => (
