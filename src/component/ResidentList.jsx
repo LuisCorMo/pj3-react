@@ -40,9 +40,7 @@ const ResidentList = ({ residents, currentLocation }) => {
   return (
     <section>
       <section
-        className={`grid justify-center max-w-screen-sm mx-auto sm:${
-          residents.length > 1 && "grid grid-cols-2"
-        } gap-12`}
+        className="grid justify-center mx-auto sm:grid-cols-2 sm:gap-12"
       >
         {residentsInPage.map((resident) => (
           <ResidentCard key={resident} residentUrl={resident} />
